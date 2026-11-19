@@ -1,0 +1,15 @@
+<h1>Edit Student</h1>
+
+<form method="POST"
+      action="/update/{{ student[0] }}">
+
+    <input
+        type="text"
+        name="name"
+        value="{{ student[1] }}">
+
+    <button type="submit">
+        Update
+    </button>
+
+</form>
