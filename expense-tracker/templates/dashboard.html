@@ -1,0 +1,27 @@
+{% for expense in expenses %}
+
+<div>
+
+    <h4>{{ expense.title }}</h4>
+
+    <p>{{ expense.amount }}</p>
+
+    <p>{{ expense.category }}</p>
+
+    <a href="/expense/edit/{{ expense.id }}">
+        Edit
+    </a>
+     |
+    <a href="/expense/delete/{{ expense.id }}">
+        Delete
+    </a>
+
+</div>
+
+<hr>
+
+{% endfor %}
+
+<h3>
+Total Expense: ₹{{ total }}
+</h3>
